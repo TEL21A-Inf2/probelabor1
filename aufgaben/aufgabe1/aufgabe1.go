@@ -11,6 +11,8 @@ package aufgabe1
  * Die Methode soll eine Position erwarten und aus der Liste das Element an dieser
  * Stelle entfernen. Kommt das Element nicht vor, soll die Funktion nichts machen.
  */
+
+// Entfernt das Element mit der gegebenen Position aus der Liste.
 func (list *LinkedList) Erase(pos int) {
 	if list.Empty() {
 		return
