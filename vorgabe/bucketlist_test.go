@@ -11,7 +11,7 @@ func TestBucketList_emptyList(t *testing.T) {
 
 	b1 := NewBucketList()
 	for _, bucket := range b1 {
-		test.AssertIntsEqual(0, len(bucket))
+		test.AssertValuesEqual(0, len(bucket))
 	}
 }
 
@@ -38,10 +38,10 @@ func TestBucketListString(t *testing.T) {
 	b1.Add("Auto")
 	b1.Add("Fahrrad")
 
-	test.AssertStringsEqual(`a: [Auto]
+	test.AssertValuesEqual(`a: [Auto]
 f: [Fahrrad]
 h: [Hallo Haus]`, b1.String())
 
 	b2 := NewBucketList()
-	test.AssertStringsEqual("", b2.String())
+	test.AssertValuesEqual("", b2.String())
 }
