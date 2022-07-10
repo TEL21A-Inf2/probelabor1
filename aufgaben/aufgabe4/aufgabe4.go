@@ -13,8 +13,6 @@ package aufgabe4
 
 // Verringert den kleinsten Wert im Baum um 1.
 func (tree *BinTree) HasOddElementNumber() bool {
-	if tree.Empty() {
-		return false
-	}
-	return (tree.Left.HasOddElementNumber() == tree.Right.HasOddElementNumber())
+	// TODO
+	return false
 }

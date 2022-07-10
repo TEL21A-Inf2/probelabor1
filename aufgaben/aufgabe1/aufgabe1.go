@@ -14,20 +14,5 @@ package aufgabe1
 
 // Entfernt das Element mit der gegebenen Position aus der Liste.
 func (list *LinkedList) Erase(pos int) {
-	if list.Empty() {
-		return
-	}
-	if pos == 0 {
-		list.Id = list.Next.Id
-		pos = 1
-	}
-
-	current := list
-	for i := 1; !current.Next.Empty(); i++ {
-		if i == pos {
-			current.Next = current.Next.Next
-			return
-		}
-		current = current.Next
-	}
+	// TODO
 }

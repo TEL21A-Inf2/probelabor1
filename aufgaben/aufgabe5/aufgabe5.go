@@ -18,9 +18,6 @@ package aufgabe5
 
 // Verringert den kleinsten Wert im Baum um 1.
 func (list *BucketList) Size() int {
-	result := 0
-	for _, bucket := range *list {
-		result += len(bucket)
-	}
-	return result
+	// TODO
+	return 0
 }

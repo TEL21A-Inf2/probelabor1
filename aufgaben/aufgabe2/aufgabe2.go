@@ -16,8 +16,6 @@ package aufgabe2
 // Liefert die erste Position, an der s in listvorkommt,
 // oder die Länge, falls s nicht vorkommt.
 func (list *LinkedList) Find(s string) int {
-	if list.Empty() || list.Id == s {
-		return 0
-	}
-	return 1 + list.Next.Find(s)
+	// TODO
+	return 0
 }
