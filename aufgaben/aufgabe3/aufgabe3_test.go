@@ -18,6 +18,7 @@ func ExampleBinTree_DecreaseSmallest_nonEmptyTree() {
 	// (42 (23 () ()) (55 () (77 () ())))
 	// (42 (22 () ()) (55 () (77 () ())))
 }
+
 func ExampleBinTree_DecreaseSmallest_emptyTree() {
 	t1 := NewBinTree()
 
