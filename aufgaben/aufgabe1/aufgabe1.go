@@ -1,4 +1,4 @@
-// Aufgabe: Listen
+// Thema der Aufgabe: Listen
 // Erreichbare Punkte: 6
 // Bewertung:
 
