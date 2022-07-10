@@ -19,6 +19,11 @@ func NewTest(name string, t *testing.T) *Test {
 
 // Prüft, ob zwei Strings gleich sind.
 func (t *Test) AssertStringsEqual(expected, actual string) {
+	t.Assert(expected == actual, "Werte sind nicht gleich!\n  Erwartet:    %v\n  Tatsächlich: %v\n", expected, actual)
+}
+
+// Prüft, ob zwei Ints gleich sind.
+func (t *Test) AssertIntsEqual(expected, actual int) {
 	t.Assert(expected == actual, "Werte sind nicht gleich!\n  Erwartet: %v\n  Tatsächlich: %v\n", expected, actual)
 }
 
