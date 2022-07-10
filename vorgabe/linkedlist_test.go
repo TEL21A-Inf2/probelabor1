@@ -1,4 +1,4 @@
-package aufgabe1
+package vorgabe
 
 import (
 	"testing"
