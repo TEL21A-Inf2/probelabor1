@@ -13,7 +13,9 @@ func TestLinkedList_MakeLinkedList(t *testing.T) {
 	test.AssertStringsEqual(l1.Id, "A")
 	test.AssertStringsEqual(l1.Next.Id, "B")
 	test.AssertStringsEqual(l1.Next.Next.Id, "C")
-	test.AssertStringsEqual(l1.Next.Next.Next.Id, "")
+	dummy := l1.Next.Next.Next
+	test.AssertStringsEqual(dummy.Id, "")
+	test.Assert(dummy.Next == nil, "Der Dummy hat noch einen Nachfolger!")
 
 	l2 := MakeLinkedList()
 	test.AssertStringsEqual(l2.Id, "")
