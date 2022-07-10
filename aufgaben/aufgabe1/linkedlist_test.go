@@ -18,3 +18,13 @@ func TestLinkedList_MakeLinkedList(t *testing.T) {
 	l2 := MakeLinkedList()
 	test.AssertStringsEqual(l2.Id, "")
 }
+
+func TestLinkedList_String(t *testing.T) {
+	test := testhelpers.NewTest("Test für die String-Repräsentation von Listen", t)
+
+	l1 := MakeLinkedList("A", "B", "C")
+	test.AssertStringsEqual(l1.String(), "[A B C]")
+
+	l2 := MakeLinkedList()
+	test.AssertStringsEqual(l2.String(), "[]")
+}
